@@ -1,0 +1,7 @@
+- hosts: all
+  become: true
+  tasks:
+  - name: stop openvpn
+    systemd:
+      name: openvpn
+      state: started
