@@ -4,4 +4,4 @@
   - name: stop openvpn
     systemd:
       name: openvpn
-      state: stopped
+      state: started
