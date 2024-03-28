@@ -4,11 +4,13 @@ if __name__ == "__main__":
     for param in sys.argv:
        print(param)
        print(type(param))
-    print("Username:")
+    print("Path GIT")
     print(sys.argv[0])
-    print("Password:")
+    print("Username:")
     print(sys.argv[1])
-    print("Ip address:")
+    print("Password:")
     print(sys.argv[2])
+    print("Ip address:")
+    print(sys.argv[3])
 
 print("test_python_script")
