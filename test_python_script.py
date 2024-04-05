@@ -13,5 +13,5 @@ if __name__ == "__main__":
     print("Ip address:")
     print(sys.argv[3])
     #x = 1/0
-    raise Exception('spam', 'eggs')
+    #raise Exception('spam', 'eggs')
     print("test_python_script")
