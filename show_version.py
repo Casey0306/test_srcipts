@@ -1,5 +1,6 @@
 import paramiko
 import sys
+import time
 
 
 ip_address = sys.argv[4]
@@ -23,6 +24,7 @@ command = "show version"
 stdin, stdout, stderr = client.exec_command(command)
 stdin.close()
 output = stdout.read().decode()
+time.sleep(60)
 print(output)
 
 client.close()
