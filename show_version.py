@@ -17,7 +17,7 @@ print(enable_password)
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-client.connect(ip_address, username=username, password=password)
+client.connect(ip_address, username=username, password=password, look_for_keys=False)
 
 command = "show version"
 stdin, stdout, stderr = client.exec_command(command)
