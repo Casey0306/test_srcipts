@@ -21,6 +21,7 @@ client.connect(ip_address, username=username, password=password, look_for_keys=F
 
 command = "show version"
 stdin, stdout, stderr = client.exec_command(command)
+stdin.close()
 output = stdout.read().decode()
 print(output)
 
