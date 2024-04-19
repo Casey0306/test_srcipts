@@ -10,7 +10,9 @@ enable_password =  sys.argv[3]
 print(ip_address)
 print(type(ip_address))
 print(username)
+print(type(username))
 print(password)
+print(type(password))
 print(enable_password)
 
 client = paramiko.SSHClient()
