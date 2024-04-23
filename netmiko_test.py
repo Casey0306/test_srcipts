@@ -16,7 +16,7 @@ cisco = {
     "secret": enable_password,
 }
 
-with ConnectHandler(**cisco1) as net_connect:
+with ConnectHandler(**cisco) as net_connect:
   net_connect.enable()
   output = net_connect.send_command("show run")
 print(output)
