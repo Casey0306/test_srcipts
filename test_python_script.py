@@ -1,4 +1,5 @@
 import sys
+import time
 
 if __name__ == "__main__":
     for param in sys.argv:
@@ -12,6 +13,7 @@ if __name__ == "__main__":
     print(sys.argv[2])
     print("Ip address:")
     print(sys.argv[3])
+    time.sleep(30)
     #x = 1/0
     #raise Exception('spam', 'eggs')
     print("test_python_script")
