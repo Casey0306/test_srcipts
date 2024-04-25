@@ -24,7 +24,7 @@ commands = ["router bgp 2000", neighbor]
 with ConnectHandler(**cisco) as net_connect:
   net_connect.enable()
   output = net_connect.send_command("show run")
-  output += net_connect.send_command("show interfaces")
+  output += net_connect.send_command_timing("show interfaces", delay_factor=1)
   output += net_connect.send_config_set(commands)
   output += net_connect.save_config()
 
