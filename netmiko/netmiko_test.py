@@ -18,5 +18,8 @@ cisco = {
 
 with ConnectHandler(**cisco) as net_connect:
   net_connect.enable()
-  output = net_connect.send_command("show run")
-print(output)
+  output1 = net_connect.send_command("show run")
+  output2 = net_connect.send_command("show interfaces")
+
+print(output1)
+print(output2)
